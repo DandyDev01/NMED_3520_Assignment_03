@@ -13,6 +13,17 @@ $(document).ready(function () {
             painting.attr("src", "Images/painting_crocked_01.png");
         }
     });
+
+    $("#chair").on("click", function() {
+        var painting = $("#chair");
+    
+        if (painting.attr("src") == "Images/Chair_01.png") {
+            painting.attr("src", "Images/Chair_00.png");
+        }
+        else {
+            painting.attr("src", "Images/Chair_01.png");
+        }
+    });
     
     // Click event handler for the image
     $('#radio').on('click', function () {
