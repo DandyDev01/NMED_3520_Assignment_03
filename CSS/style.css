@@ -75,6 +75,18 @@
     top: 200px;
 }
 
+#radio-table {
+    position: absolute;
+    left: 1600px;
+    top: 500px;
+}
+
+#radio {
+    position: absolute;
+    left: 1600px;
+    top: 360px;
+}
+
 #overlay {
     background-color: rgba(0, 0, 0, 0.384);
     position: absolute;
