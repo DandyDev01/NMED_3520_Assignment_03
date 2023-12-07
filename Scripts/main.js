@@ -4,23 +4,17 @@ $(document).ready(function () {
     });
     
     $("#painting").on("click", function() {
-        var painting = $("#painting");
-    
         imageSwap("Images/painting_crocked_00.png", 
-                  "Images/painting_crocked_01.png", painting);
+                  "Images/painting_crocked_01.png", $("#painting"));
     });
 
     $("#window").on("click", function() {
-        var window = $("#window");
-    
         imageSwap("Images/Window_closed_00.png", 
-                  "Images/Window_open_00.png", window);
+                  "Images/Window_open_00.png", $("#window"));
     });
 
     $("#chair").on("click", function() {
-        var chair = $("#chair");
-    
-        imageSwap("Images/Chair_00.png", "Images/Chair_01.png", chair);
+        imageSwap("Images/Chair_00.png", "Images/Chair_01.png", $("#chair"));
     });
     
     // Click event handler for the image
