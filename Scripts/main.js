@@ -17,7 +17,7 @@ $("#painting").on("click", function() {
 
 $(document).ready(function () {
     // Click event handler for the image
-    $('#myImage').on('click', function () {
+    $('#radio').on('click', function () {
         // Play the audio when the image is clicked
         $('#myAudio')[0].play();
     });
