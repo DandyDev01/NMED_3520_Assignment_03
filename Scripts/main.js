@@ -6,34 +6,21 @@ $(document).ready(function () {
     $("#painting").on("click", function() {
         var painting = $("#painting");
     
-        if (painting.attr("src") == "Images/painting_crocked_01.png") {
-            painting.attr("src", "Images/painting_crocked_00.png");
-        }
-        else {
-            painting.attr("src", "Images/painting_crocked_01.png");
-        }
+        imageSwap("Images/painting_crocked_00.png", 
+                  "Images/painting_crocked_01.png", painting);
     });
 
     $("#window").on("click", function() {
         var window = $("#window");
     
-        if (window.attr("src") == "Images/Window_closed_00.png") {
-            window.attr("src", "Images/Window_open_00.png");
-        }
-        else {
-            window.attr("src", "Images/Window_closed_00.png");
-        }
+        imageSwap("Images/Window_closed_00.png", 
+                  "Images/Window_open_00.png", window);
     });
 
     $("#chair").on("click", function() {
         var chair = $("#chair");
     
-        if (chair.attr("src") == "Images/Chair_01.png") {
-            chair.attr("src", "Images/Chair_00.png");
-        }
-        else {
-            chair.attr("src", "Images/Chair_01.png");
-        }
+        imageSwap("Images/Chair_00.png", "Images/Chair_01.png", chair);
     });
     
     // Click event handler for the image
@@ -71,6 +58,15 @@ function startWiggle() {
     images.each(function() {
         wiggleImage(this);
     });
+}
+
+function imageSwap(imageURL_1, imageURL_2, item) {
+    if (item.attr("src") == imageURL_2) {
+        item.attr("src", imageURL_1);
+    }
+    else {
+        item.attr("src", imageURL_2);
+    }
 }
 
 // Initial call to start the animation
