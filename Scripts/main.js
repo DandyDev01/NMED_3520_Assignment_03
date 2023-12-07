@@ -1,25 +1,28 @@
-
-$(".light-toggle").on("click", function() {
-    $("#overlay").toggleClass("disable");
-});
-
-$("#painting").on("click", function() {
-    var painting = $("#painting");
-
-    if (painting.attr("src") == "Images/painting_crocked_01.png") {
-        painting.attr("src", "Images/painting_crocked_00.png");
-    }
-    else {
-        painting.attr("src", "Images/painting_crocked_01.png");
-    }
-});
-
-
 $(document).ready(function () {
+    $(".light-toggle").on("click", function() {
+        $("#overlay").toggleClass("disable");
+    });
+    
+    $("#painting").on("click", function() {
+        var painting = $("#painting");
+    
+        if (painting.attr("src") == "Images/painting_crocked_01.png") {
+            painting.attr("src", "Images/painting_crocked_00.png");
+        }
+        else {
+            painting.attr("src", "Images/painting_crocked_01.png");
+        }
+    });
+    
     // Click event handler for the image
     $('#radio').on('click', function () {
         // Play the audio when the image is clicked
         $('#myAudio')[0].play();
+    });
+
+    $('#tv').on('click', function () {
+        // Play the audio when the image is clicked
+        $('#myAudio1')[0].play();
     });
 });
 
