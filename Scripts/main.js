@@ -14,14 +14,25 @@ $(document).ready(function () {
         }
     });
 
-    $("#chair").on("click", function() {
-        var painting = $("#chair");
+    $("#window").on("click", function() {
+        var window = $("#window");
     
-        if (painting.attr("src") == "Images/Chair_01.png") {
-            painting.attr("src", "Images/Chair_00.png");
+        if (window.attr("src") == "Images/Window_closed_00.png") {
+            window.attr("src", "Images/Window_open_00.png");
         }
         else {
-            painting.attr("src", "Images/Chair_01.png");
+            window.attr("src", "Images/Window_closed_00.png");
+        }
+    });
+
+    $("#chair").on("click", function() {
+        var chair = $("#chair");
+    
+        if (chair.attr("src") == "Images/Chair_01.png") {
+            chair.attr("src", "Images/Chair_00.png");
+        }
+        else {
+            chair.attr("src", "Images/Chair_01.png");
         }
     });
     
